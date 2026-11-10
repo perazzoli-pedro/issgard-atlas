@@ -162,7 +162,7 @@ td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-
 /* copy confirmation, styled like the game's chat input box */
 .navitoast{position:fixed;left:50%;bottom:max(18px,env(safe-area-inset-bottom,0px));transform:translate(-50%,12px);z-index:20;display:grid;gap:2px;width:max-content;max-width:calc(100vw - 32px);background:#fbfaf2;color:#16181a;border:1px solid #9aa04a;border-left:4px solid #b8c43a;border-radius:3px;padding:7px 12px;box-shadow:0 6px 22px rgba(0,0,0,.3);opacity:0;visibility:hidden}
 .navitoast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
-@media (prefers-reduced-motion:no-preference){.navitoast{transition:opacity .15s,transform .15s,visibility .15s}}
+@media (prefers-reduced-motion:no-preference){.navitoast{transition:opacity .15s,transform .15s,visibility 0s .15s}.navitoast.show{transition:opacity .15s,transform .15s,visibility 0s}}
 .navitoast .cmd{font:13px/1.4 Tahoma,Verdana,"Segoe UI",sans-serif;overflow-wrap:anywhere}
 .navitoast .msg{font:500 .8rem/1.35 var(--body);color:#4d5358}
 .navitoast input{font:13px Tahoma,Verdana,sans-serif;border:1px solid #9aa04a;border-radius:2px;padding:3px 6px;width:min(320px,100%);background:#fff;color:#16181a}
